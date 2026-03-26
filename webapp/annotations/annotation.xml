@@ -1,0 +1,329 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZSB_MAT_ATP_REPORT/$metadata">
+        <edmx:Include Namespace="cds_zsd_mat_atp_report" Alias="SAP"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="cds_zsd_mat_atp_report.ZCE_MaterialWeeklyQtyType">
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Material</PropertyPath>
+                        <PropertyPath>Plant</PropertyPath>
+                        <PropertyPath>MRPController</PropertyPath>
+                    </Collection>
+                </Annotation>
+
+                
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Material"/>
+                            <PropertyValue Property="Label" String="{@i18n>material}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Plant"/>
+                            <PropertyValue Property="Label" String="{@i18n>plant}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MRPController"/>
+                            <PropertyValue Property="Label" String="{@i18n>mrpController}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ItemDesc"/>
+                            <PropertyValue Property="Label" String="{@i18n>materialDescription}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PlannerID"/>
+                            <PropertyValue Property="Label" String="{@i18n>planner}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MakeBuy"/>
+                            <PropertyValue Property="Label" String="{@i18n>makebuy}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PrimVndr"/>
+                            <PropertyValue Property="Label" String="{@i18n>primaryVendor}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrdrPntQty"/>
+                            <PropertyValue Property="Label" String="{@i18n>orderPointQty}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="BaseUofM"/>
+                            <PropertyValue Property="Label" String="{@i18n>baseUnit}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week1"/>
+                            <PropertyValue Property="Label" String="{@i18n>week1}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week2"/>
+                            <PropertyValue Property="Label" String="{@i18n>week2}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week3"/>
+                            <PropertyValue Property="Label" String="{@i18n>week3}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week4"/>
+                            <PropertyValue Property="Label" String="{@i18n>week4}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week5"/>
+                            <PropertyValue Property="Label" String="{@i18n>week5}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week6"/>
+                            <PropertyValue Property="Label" String="{@i18n>week6}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week7"/>
+                            <PropertyValue Property="Label" String="{@i18n>week7}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week8"/>
+                            <PropertyValue Property="Label" String="{@i18n>week8}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week9"/>
+                            <PropertyValue Property="Label" String="{@i18n>week9}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week10"/>
+                            <PropertyValue Property="Label" String="{@i18n>week10}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week11"/>
+                            <PropertyValue Property="Label" String="{@i18n>week11}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week12"/>
+                            <PropertyValue Property="Label" String="{@i18n>week12}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week13"/>
+                            <PropertyValue Property="Label" String="{@i18n>week13}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week14"/>
+                            <PropertyValue Property="Label" String="{@i18n>week14}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week15"/>
+                            <PropertyValue Property="Label" String="{@i18n>week15}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week16"/>
+                            <PropertyValue Property="Label" String="{@i18n>week16}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week17"/>
+                            <PropertyValue Property="Label" String="{@i18n>week17}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week18"/>
+                            <PropertyValue Property="Label" String="{@i18n>week18}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week19"/>
+                            <PropertyValue Property="Label" String="{@i18n>week19}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week20"/>
+                            <PropertyValue Property="Label" String="{@i18n>week20}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week21"/>
+                            <PropertyValue Property="Label" String="{@i18n>week21}"/>
+                        </Record>
+                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week22"/>
+                            <PropertyValue Property="Label" String="{@i18n>week22}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week23"/>
+                            <PropertyValue Property="Label" String="{@i18n>week23}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Week24"/>
+                            <PropertyValue Property="Label" String="{@i18n>week24}"/>
+                        </Record>                         
+                    </Collection>
+                </Annotation>
+
+               
+
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#idGenInfo"/>
+                            <PropertyValue Property="Label" String="Weekly Planning Overview"/>
+                            <PropertyValue Property="ID" String="idGenInfo"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="idGenInfo">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Material"/>
+                                    <PropertyValue Property="Label" String="{@i18n>material}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Plant"/>
+                                    <PropertyValue Property="Label" String="{@i18n>plant}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MRPController"/>
+                                    <PropertyValue Property="Label" String="{@i18n>mrpController}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ItemDesc"/>
+                                    <PropertyValue Property="Label" String="{@i18n>materialDescription}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PlannerID"/>
+                                    <PropertyValue Property="Label" String="{@i18n>planner}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MakeBuy"/>
+                                    <PropertyValue Property="Label" String="{@i18n>makebuy}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PrimVndr"/>
+                                    <PropertyValue Property="Label" String="{@i18n>primaryVendor}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="OrdrPntQty"/>
+                                    <PropertyValue Property="Label" String="{@i18n>orderPointQty}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BaseUofM"/>
+                                    <PropertyValue Property="Label" String="{@i18n>baseUnit}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week1"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week1}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week2"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week2}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week3"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week3}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week4"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week4}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week5"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week5}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week6"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week6}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week7"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week7}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week8"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week8}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week9"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week9}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week10"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week10}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week11"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week11}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week12"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week12}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week13"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week13}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week14"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week14}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week15"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week15}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week16"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week16}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week17"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week17}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week18"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week18}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week19"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week19}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week20"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week20}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week21"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week21}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week22"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week22}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week23"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week23}"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Week24"/>
+                                    <PropertyValue Property="Label" String="{@i18n>week24}"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>  
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="Material ATP Report"/>
+                        <PropertyValue Property="TypeNamePlural" String="Material Weekly Plan"/>
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="Material"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
